@@ -1,4 +1,4 @@
-# 🧾 Billing Project POM - Test Automation Framework
+# Billing Project POM - Test Automation Framework
 
 ![Build](https://github.com/your-username/BillingProjectPOM/actions/workflows/ci.yml/badge.svg)
 ![Jenkins](https://img.shields.io/badge/Jenkins-Pipeline-green)
