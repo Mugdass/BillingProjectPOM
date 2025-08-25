@@ -105,6 +105,16 @@ mvn clean test
 allure serve target/allure-results
 ```
 
+
+📊 Example Output
+
+Console:
+
+[INFO] Running TestSuite
+[INFO] Tests run: 5, Failures: 0, Skips: 0
+[INFO] BUILD SUCCESS
+
+
 ## 🔗 CI/CD
 
 ### GitHub Actions
