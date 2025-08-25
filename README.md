@@ -22,19 +22,60 @@ This is a **Page Object Model (POM) based Hybrid Test Automation Framework** bui
 ## 📂 Project Structure
 ```
 BillingProjectPOM
- ┣ 📂 src/main/java
- ┃ ┗ 📂 utils
- ┃   ┣ DriverFactory.java
- ┃   ┣ ReportingUtils.java
- ┃   ┗ ConfigReader.java
- ┣ 📂 src/test/java/tests
- ┃ ┗ SampleFailTest.java
- ┣ 📂 src/test/resources
- ┃ ┗ config.properties
- ┣ pom.xml
- ┣ Jenkinsfile
- ┣ .github/workflows/ci.yml
- ┗ README.md
+┣ 📂 BillingProjectPOM
+┃ ┣ .classpath
+┃ ┣ .project
+┃ ┣ 📂 .settings
+┃ ┃ ┣ org.eclipse.core.resources.prefs
+┃ ┃ ┣ org.eclipse.jdt.core.prefs
+┃ ┃ ┗ org.eclipse.m2e.core.prefs
+┃ ┣ 📂 data
+┃ ┃ ┣ .DS_Store
+┃ ┃ ┗ b.xlsx
+┃ ┣ 📂 features
+┃ ┃ ┣ CreateInvoiceTestWithCucumber.feature
+┃ ┃ ┗ VerifyInvoiceTestWithCucumber.feature
+┃ ┣ pom.xml
+┃ ┣ 📂 screenshot
+┃ ┣ 📂 src
+┃ ┃ ┣ 📂 main/java
+┃ ┃ ┃ ┣ 📂 Model
+┃ ┃ ┃ ┃ ┣ BaseModel.java
+┃ ┃ ┃ ┃ ┣ ToBillingPageModel.java
+┃ ┃ ┃ ┃ ┣ ToCustomerInvoicePageToValidateDataPageModel.java
+┃ ┃ ┃ ┃ ┣ ToHomePageModel.java
+┃ ┃ ┃ ┃ ┣ ToListPageModel.java
+┃ ┃ ┃ ┃ ┗ ToNewInvoicePageModel.java
+┃ ┃ ┃ ┣ 📂 Page
+┃ ┃ ┃ ┃ ┣ ToBillingPagePage.java
+┃ ┃ ┃ ┃ ┣ ToCustomerInvoicePageToValidateDataPagePage.java
+┃ ┃ ┃ ┃ ┣ ToHomePagePage.java
+┃ ┃ ┃ ┃ ┣ ToListPagePage.java
+┃ ┃ ┃ ┃ ┗ ToNewInvoicePagePage.java
+┃ ┃ ┃ ┗ 📂 lib
+┃ ┃ ┃ ┗ ExcelReader.java
+┃ ┃ ┗ 📂 test/java
+┃ ┃ ┣ 📂 Test
+┃ ┃ ┃ ┣ BaseTest.java
+┃ ┃ ┃ ┣ CreateInvoiceTest.java
+┃ ┃ ┃ ┣ VerifyInvoiceTest.java
+┃ ┃ ┃ ┗ example_On_split_text_and_get_part_of_text.java
+┃ ┃ ┗ 📂 steps
+┃ ┃ ┣ CreateinvoiceTestSteps.java
+┃ ┃ ┣ Runner.java
+┃ ┃ ┣ StepBase.java
+┃ ┃ ┗ VerifyinvoiceTestSteps.java
+┃ ┣ 📂 target
+┃ ┃ ┣ 📂 classes
+┃ ┃ ┣ 📂 report
+┃ ┃ ┃ ┣ 📂 html
+┃ ┃ ┃ ┃ ┗ index.html
+┃ ┃ ┃ ┗ 📂 json
+┃ ┃ ┃ ┗ output.json
+┃ ┃ ┗ 📂 test-classes
+┃ ┃ ┣ BaseTest.class
+┃ ┃ ┣ CreateInvoiceTest.class
+┃ ┃ ┣ VerifyInvoiceTest.class
 ```
 
 ## ⚙️ Configuration
@@ -77,4 +118,3 @@ allure serve target/allure-results
 - Archives **Allure results + reports**
 
 ---
-✅ This repo can serve as a **QA Portfolio Project** for interviews and LinkedIn showcase.
