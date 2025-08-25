@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BillingProjectTestCases]" guice-stage="DEVELOPMENT">
+  <test name="ToCreateInvoice(failed)">
+    <classes>
+      <class name="Test.CreateInvoiceTest">
+        <methods>
+          <include name="logIn"/>
+          <include name="maintest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.CreateInvoiceTest -->
+      <class name="Test.VerifyInvoiceTest">
+        <methods>
+          <include name="logIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Test.VerifyInvoiceTest -->
+    </classes>
+  </test> <!-- ToCreateInvoice(failed) -->
+  <test name="ToVerifyInvoice(failed)">
+    <classes>
+      <class name="Test.CreateInvoiceTest">
+        <methods>
+          <include name="logIn"/>
+        </methods>
+      </class> <!-- Test.CreateInvoiceTest -->
+      <class name="Test.VerifyInvoiceTest">
+        <methods>
+          <include name="logIn"/>
+          <include name="setUp"/>
+          <include name="maintest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.VerifyInvoiceTest -->
+    </classes>
+  </test> <!-- ToVerifyInvoice(failed) -->
+</suite> <!-- Failed suite [BillingProjectTestCases] -->
